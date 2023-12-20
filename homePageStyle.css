@@ -1,0 +1,428 @@
+@charset "utf-8";
+@import url("fonts.css");
+@import url("constants.css");
+
+
+*,::before,::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+header{
+    height: 80px;
+    background: linear-gradient(to top left,#0f2027,#2C5364);
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#brand-container{
+    display: flex;
+    border: white;
+    border-radius: 10px;
+    height: 100%;
+    width: 200px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+#logo-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+
+#img-gym {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    aspect-ratio: 1.297;
+} 
+
+#logo-title{
+    font-family: "Zing_Rust_Custom";
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 10px;
+    text-align: center;
+}
+
+#logo-title span{
+    font-size: 2rem;
+}
+
+
+#nav_menu{
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: flex-end;
+}
+
+.nav-item-link{
+    font-family: "Zing_Rust_Custom";
+    margin-right: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: hand;
+}
+
+#nav_menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    color: red  !important; 
+    text-decoration: underline  !important;
+}
+
+
+#nav_menu a:hover, .nav-item-link:hover{
+    cursor: pointer;
+    color: red;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* ---------------------------------Hero SECTION -------------------------------*/
+#hero-section{
+    border: solid 2px lightblue;
+    background-color: var(--cloud-wisp);
+    height: 750px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.background-image{
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    background-image: url(Images/backgroundImage.svg);
+    opacity: 10%;
+}
+
+
+#catch-line {
+    font-family: "Zing_Rust_Custom";
+    font-weight: 400;
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    /* color: var(--primary-color2); */
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 14%;
+    font-size: 6em;
+    line-height: 90%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.commas{
+    position: absolute;
+}
+
+
+ #catch-line::before{
+    content: url(Images/invertedCommasLeft.svg);
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: -80px;
+    left: -40px;
+} 
+#bottomLine{
+    margin-left: 10%;
+}
+
+#catch-line::after{
+    content: url(Images/invertedCommasRight.svg);
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+
+
+#catcherImage{
+    width: 70%;
+    margin-right: 2%;
+    align-self: flex-end;
+    z-index: 4;
+}
+
+
+
+
+/* ---------------------------------------Page link Section */
+
+
+#page-link-section{
+    border-left: solid 2px lightblue;
+    border-right: solid 2px lightblue;
+    height: 750px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#site-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    cursor: pointer;
+}
+
+
+
+.post-container{
+    background-color: var(--primary-color);
+    z-index: 10;
+    height: 500px;
+    width: 300px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.post-text{
+    padding: 15px;
+    color: white;
+    align-self: flex-end;
+    height: 170px;
+    overflow: hidden;
+}
+
+.post-text h2{
+    /* margin-top: -5px; */
+    height: 15px;
+    font-family: "BronRust";
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.post-text p{
+    font-family: "Zing_Rust_Regular";
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.post-text:hover p{
+    font-size: 18px;
+
+}
+
+.post-container:hover, .post-text:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    align-self: center;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 520px;
+    padding-bottom: 0px;
+}
+
+.post-container:hover img{
+    height: 100%;
+}
+
+.post-container:hover h2{
+    font-size: 26px;
+    color: red;
+}
+
+
+.post-container img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+}
+
+
+.postTextHover{
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    width: 100%;
+    height: 520px !important;
+    padding-left: 10% ;
+    padding-right: 10%;
+    padding-top: 15px;
+
+}
+
+
+
+/*  ------------------------FOOTER ------------------------ */
+footer{
+    height: 200px;
+    background: linear-gradient(to bottom left,#0f2027,#2C5364);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+
+#social-link-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer h2{
+    color: white;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 400;
+    height: 15px;
+    margin-top: 20px;
+}
+
+#social-links{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#social-links img{
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#social-links img:hover{
+    transform: rotateZ(-1turn);
+    -webkit-transform: rotateZ(-1turn);
+    -moz-transform: rotateZ(-1turn);
+    -ms-transform: rotateZ(-1turn);
+    -o-transform: rotateZ(-1turn);
+    transition: transform 0.5s ;
+    -webkit-transition: transform 0.5s ;
+    -moz-transition: transform 0.5s ;
+    -ms-transition: transform 0.5s ;
+    -o-transition: transform 0.5s ;
+}
+
+
+#copyright{
+    align-self: flex-end;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-family: "Zing_Rust_Regular";
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.small_letters_footer{
+    font-size: 12px;
+    padding-top: 0px;
+    font-family: "Zing_Rust_Regular";
+}
+
+
+
+@media (orientation: portrait) {
+    body{
+        height: 100vh;
+        width: 100vw;
+        margin: 0 auto;
+    } 
+
+    /* -----------Hero SECTION */
+    #hero-section{
+        height: fit-content;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 100px; */
+    }
+
+    #catch-line{
+        margin-left: 0;
+    }
+
+    #catcherImage{
+        align-self: center;
+    }
+
+    #catch-line::after {
+        top: 63%;
+        right: 10%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1440px)  {
+    body{
+        height: 100vh;
+        width: 1440px;
+        margin: 0 auto;
+    } 
+
+    .post-text-large-screen{
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        width: 100%;
+        height: 520px !important;
+        padding-left: 10% ;
+        padding-right: 10%;
+        padding-top: 15px;
+    }
+
+}
+
+
+
+
+
+
+  
+

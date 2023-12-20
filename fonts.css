@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Zing_Rust_Custom';
+    src: url('./Fonts/ZingRustG3-Base.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zing_Rust_G1';
+    src: url('./Fonts/ZingRustG1-Base.otf');
+}
+
+@font-face {
+    font-family: 'Zing_Rust_BASE';
+    src: url('./Fonts/ZingRust-Base.otf');
+}
+
+@font-face{
+    font-family: "Public_Sans";
+    src: url("./Fonts/PublicaSans.otf");
+}
+
+@font-face {
+    font-family: "Zing_Rust_Regular";
+    src: url("./Fonts/Zing_Sans_Rust_Regulare.ttf");
+}
+
+@font-face {
+    font-family: "BronRust";
+    src: url("./Fonts/BronnRust-BoldFillG.otf");
+}
+
+@font-face {
+    font-family: "VersatileRust";
+    src: url("./Fonts/VersatileRust-Bold.ttf");
+}
+
